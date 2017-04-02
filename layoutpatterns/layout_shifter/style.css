@@ -1,0 +1,67 @@
+.container
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box 
+{
+	width: 100%;
+	min-height: calc(100vh/4);
+	font-size: 100px;
+	color: white;
+	text-align: center;
+}
+
+.dark_blue
+{
+	background: #00e;
+}
+
+.light_blue
+{
+	background: #00c;
+}
+
+.green
+{
+	background: #0f0;
+}
+
+.red
+{
+	background: #f00;
+}
+
+@media (min-width:500px)
+{
+	
+	.dark_blue
+	{
+		width: 50%;
+	}	
+	#container2
+	{
+		width: 50%;
+	}
+}
+
+@media (min-width: 600px)
+{
+	.dark_blue 
+	{
+		width: 25%;
+		order:1;
+	}
+	#container2
+	{
+		width: 50%;
+	}
+	.red
+	{
+		width: 25%;
+		order: -1;
+	}
+
+}
