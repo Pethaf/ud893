@@ -2,5 +2,5 @@
 
 Repository for assignments for the  course Responsive Web Design Fundamentals
 
-https://classroom.udacity.com/courses/ud893 
 
+https://www.udacity.com/course/responsive-web-design-fundamentals--ud893
