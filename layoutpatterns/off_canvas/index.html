@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<charset="utf-8">
+	<title>The Off-Canvas Pattern</title>
+</head>
+<body>
+<main>
+<div class="hamburger">☰</div>
+</main>
+<nav class="menu">
+	<a href="#">Item1</a>
+	<a href="#">Item2</a>
+	<a href="#">Item3</a>
+	<a href="#">Item4</a>
+	<a href="#">Item5</a>
+</nav>
+</body>
+ <script>
+   	  var nav = document.querySelector(".menu")
+      var hamburger = document.querySelector(".hamburger");
+
+      hamburger.addEventListener('click', function(e) {
+        nav.classList.toggle('open');
+        e.stopPropagation();
+      });
+      nav.addEventListener('click',function(e)
+      {
+      	nav.classList.toggle('open');
+      	e.stopPropagation();
+      })
+
+    </script>
+</html>
