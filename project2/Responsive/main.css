@@ -24,14 +24,24 @@ ul {
   padding: 0;
   margin: 0;
 }
-.flex-wrapper
+
+.content 
 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hero, .top-news, .scores, .weather, .latest-news, .recent-news
+{
+  flex-basis: 100%;
 }
 
 
-
+footer 
+{
+  display: flex;
+  justify-content: center;
+}
 /*
  *
  * Common
@@ -104,8 +114,8 @@ ul {
 
 nav.open
 {
-  -webkit-transform: translate(0,100px);
-  transform: translate(0, 100px);
+  -webkit-transform: translate(0,-80px);
+  transform: translate(0, -80px);
 }
 
 
@@ -390,3 +400,47 @@ footer a {
   color: #333;
   padding: 1.5em;
 }
+
+@media screen and (min-width: 600px)
+{
+  .nav 
+  {
+     -webkit-transform: translate(0,0px);
+  transform: translate(0, 0px);
+    position: static;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+
+  }
+  .hamburger 
+  {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px)
+{ 
+  .content
+  {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+    .news, .scores, .weather 
+    {
+      flex-basis: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px)
+{
+     .flex-wrapper 
+    {
+      width: 1000px;
+      margin: 0  auto;
+    }
+}
+
+
+
